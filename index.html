@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
+  <title>Belly Button Biodiversity</title>
   <!-- Header links to the Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="background-color:blue">
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+      <div class="col-md-12 jumbotron text-center" style="background-image: url(https://www.boldsky.com/img/300x75/2017/10/xcover-26-1509021530.jpg.pagespeed.ic.V0fuia9bnH.jpg)" background-size: 25%>
+        <h1 style="color:blue">Belly Button Biodiversity Dashboard</h1>
+        <p style="color:blue">Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
@@ -42,14 +42,17 @@
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+          <p style="color:white"> This horizontal bar chart displays the top ten bacterial species found in the navel of the selected test subject ID number. </p>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+          <p style="color:white"> This gauge chart displays the weekly washing frequency of the navel of the selected test subject ID number. </p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+          <p style="color:white"> This bubble chart displays the top ten bacterial species found in the navel of the selected test subject ID number. Each bubble represents a different bacteria type and its size corresponds with how much of that bacteria was found.</p>
       </div>
     </div>
   </div>
@@ -57,7 +60,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="static/data/samples.json"></script>
-  <!--<script src="static/js/plots.js"></script>-->
   <script src="static/js/charts.js"></script>
 
 </body>
